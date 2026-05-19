@@ -6,7 +6,7 @@ A beautiful and responsive weather application built with React and Tailwind CSS
 
 ## 🚀 Live Demo
 
-🔗 weather-application-ebon-omega.vercel.app  
+🔗 Deployed link here  
 ```bash
 weather-application-ebon-omega.vercel.app
 ```
