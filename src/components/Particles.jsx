@@ -12,7 +12,7 @@ export default function Particles({ theme }) {
         size: `${11 + (i % 3) * 5}px`,
         opacity: 0.15 + (i % 4) * 0.07,
       })),
-    [theme]
+    []
   );
 
   return (
