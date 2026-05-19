@@ -1,68 +1,96 @@
-# 🌤 SkyCast Weather App
+# 🌤 SkyCast — Modern Weather App
 
-Ek beautiful weather app — React + Tailwind CSS ke saath, GPS support ke saath!
-
----
-
-## 🚀 Setup Karo (5 Minutes)
-
-### Step 1 — Dependencies Install Karo
-
-```bash
-cd skycast
-npm install
-npm install tailwindcss postcss autoprefixer
-```
-
-### Step 2 — API Key Daalo
-
-`src/utils/config.js` file kholo aur apni key daalo:
-
-```js
-const API_KEY = "YAHAN_APNI_KEY_DAALO";
-```
-
-**Free API Key kaise milegi?**
-1. Jao: https://openweathermap.org/api
-2. Free account banao
-3. Dashboard mein "My API Keys" mein jaake key copy karo
-4. Key active hone mein 10-15 minute lagte hain
-
-### Step 3 — App Chalao
-
-```bash
-npm start
-```
-
-Browser mein khulega: `http://localhost:3000`
+A beautiful and responsive weather application built with React and Tailwind CSS featuring live weather updates, GPS-based location detection, dynamic themes, and a modern animated UI.
 
 ---
 
-## 📁 Project Structure
+## 📸 Preview
 
+<img width="100%" alt="SkyCast Preview" src="https://via.placeholder.com/1200x600.png?text=SkyCast+Weather+App" />
+
+---
+
+## 🚀 Live Demo
+
+🔗 Add your deployed link here  
+Example:
+
+```bash
+https://skycast-weather.vercel.app
 ```
+
+---
+
+## ✨ Features
+
+### 🌍 Weather Features
+- 📍 Automatic GPS location detection
+- 🔍 Search weather by city name
+- 🌡 Toggle between Celsius & Fahrenheit
+- 📅 5-Day weather forecast
+- 🌅 Sunrise & Sunset progress tracker
+- ⏰ Live real-time clock
+
+### 🎨 UI/UX Features
+- Dynamic weather-based themes
+- Smooth animations & ambient particles
+- Fully responsive design
+- Modern glassmorphism interface
+- Weather-specific color palettes
+
+### 📊 Weather Details
+- Humidity
+- Wind Speed
+- Pressure
+- Visibility
+- Cloud Coverage
+- Wind Gust
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 18 | Frontend Framework |
+| Tailwind CSS | Styling |
+| OpenWeatherMap API | Weather Data |
+| Geolocation API | GPS Detection |
+| JavaScript (ES6+) | Application Logic |
+
+---
+
+## 📂 Project Structure
+
+```bash
 skycast/
+│
 ├── public/
-│   └── index.html              # HTML template
+│   └── index.html
+│
 ├── src/
 │   ├── components/
-│   │   ├── ErrorBanner.jsx     # Error messages
-│   │   ├── ForecastSection.jsx # 5-day forecast cards
-│   │   ├── Header.jsx          # App header + clock
-│   │   ├── MainWeatherCard.jsx # Main weather display
-│   │   ├── MockBanner.jsx      # Demo mode warning
-│   │   ├── Particles.jsx       # Ambient particles
-│   │   ├── SearchBar.jsx       # City search + GPS button
-│   │   └── StatsGrid.jsx       # Humidity, wind, etc.
+│   │   ├── ErrorBanner.jsx
+│   │   ├── ForecastSection.jsx
+│   │   ├── Header.jsx
+│   │   ├── MainWeatherCard.jsx
+│   │   ├── MockBanner.jsx
+│   │   ├── Particles.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── StatsGrid.jsx
+│   │
 │   ├── hooks/
-│   │   └── useWeather.js       # All API logic (city + GPS)
+│   │   └── useWeather.js
+│   │
 │   ├── utils/
-│   │   ├── config.js           # ← API KEY YAHAN DAALO
-│   │   ├── constants.js        # Weather themes & mock data
-│   │   └── helpers.js          # Utility functions
-│   ├── App.jsx                 # Main app component
-│   ├── index.css               # Tailwind + custom CSS
-│   └── index.js                # React entry point
+│   │   ├── config.js
+│   │   ├── constants.js
+│   │   └── helpers.js
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── index.js
+│
 ├── package.json
 ├── tailwind.config.js
 └── postcss.config.js
@@ -70,47 +98,125 @@ skycast/
 
 ---
 
-## ✨ Features
+## ⚡ Installation & Setup
 
-- 📍 **GPS Auto-Detect** — App open hote hi location detect karta hai
-- 🔍 **City Search** — Koi bhi city search karo
-- 🌡 **°C / °F Toggle** — Temperature unit badlo
-- 🎨 **Dynamic Themes** — Weather ke hisaab se colors badalta hai
-  - ☀️ Clear → Orange/Amber
-  - ☁️ Cloudy → Slate grey
-  - 🌧️ Rain → Deep blue
-  - ⛈️ Storm → Dark grey + yellow
-  - ❄️ Snow → Sky blue
-  - 🌫️ Mist/Haze → Teal/Amber
-- ✦ **Ambient Particles** — Weather-themed floating particles
-- 🌅 **Sunrise/Sunset Bar** — Live solar progress
-- 📊 **6 Stats** — Humidity, Wind, Pressure, Visibility, Cloud Cover, Gust
-- 📅 **5-Day Forecast** — Scrollable forecast cards
-- ⏰ **Live Clock** — Real-time updates
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/Weather-App.git
+cd Weather-App
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Configure API Key
+
+Go to:
+
+```bash
+src/utils/config.js
+```
+
+Add your OpenWeatherMap API key:
+
+```js
+const API_KEY = "YOUR_API_KEY";
+```
+
+Get your free API key from:
+
+🔗 https://openweathermap.org/api
 
 ---
 
-## 🛠 Tech Stack
+## ▶ Run Development Server
 
-| Technology | Use |
+```bash
+npm start
+```
+
+App will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+## 🌈 Dynamic Weather Themes
+
+| Weather | Theme |
 |---|---|
-| React 18 | UI Framework |
-| Tailwind CSS | Styling |
-| OpenWeatherMap API | Weather Data |
-| Browser Geolocation API | GPS Detection |
+| ☀ Clear | Orange / Amber |
+| ☁ Cloudy | Slate Grey |
+| 🌧 Rain | Deep Blue |
+| ⛈ Storm | Dark Grey + Yellow |
+| ❄ Snow | Sky Blue |
+| 🌫 Mist/Haze | Teal / Amber |
 
 ---
 
 ## ⚠️ Troubleshooting
 
-**"City not found"** → Sahi city name likho (e.g. "Mumbai" not "bombay")
+### ❌ City Not Found
+Use correct city names.
 
-**GPS kaam nahi kar raha** → Browser mein location permission do. Chrome mein: address bar pe lock icon → Site Settings → Location → Allow
+Example:
 
-**API key kaam nahi kar rahi** → Naye account mein key active hone mein 10-15 min lagte hain. Wait karo phir try karo.
-
-**"502 Bad Gateway"** → OpenWeatherMap ka server busy hai, thodi der baad try karo.
+```bash
+Mumbai
+New Delhi
+London
+```
 
 ---
 
-Made with ❤️ using React + Tailwind CSS
+### 📍 GPS Not Working
+Allow location permissions in your browser.
+
+Chrome:
+- Lock Icon → Site Settings → Location → Allow
+
+---
+
+### 🔑 API Key Not Working
+New API keys may take 10–15 minutes to activate.
+
+---
+
+### 🌐 502 Bad Gateway
+OpenWeatherMap servers may be temporarily busy.
+
+---
+
+## 🚀 Future Improvements
+
+- 🌙 Dark / Light mode toggle
+- 📱 PWA support
+- 🌍 Multi-language support
+- 📊 Hourly weather forecast
+- 🔔 Weather alerts
+
+---
+
+## 👨‍💻 Author
+
+### Priyanshu Verma
+
+- GitHub: :contentReference[oaicite:0]{index=0}
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
