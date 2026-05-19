@@ -4,17 +4,9 @@ A beautiful and responsive weather application built with React and Tailwind CSS
 
 ---
 
-## 📸 Preview
-
-<img width="100%" alt="SkyCast Preview" src="https://via.placeholder.com/1200x600.png?text=SkyCast+Weather+App" />
-
----
-
 ## 🚀 Live Demo
 
-🔗 Add your deployed link here  
-Example:weather-application-ebon-omega.vercel.app
-
+🔗 weather-application-ebon-omega.vercel.app  
 ```bash
 weather-application-ebon-omega.vercel.app
 ```
