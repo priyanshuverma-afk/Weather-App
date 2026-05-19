@@ -13,10 +13,10 @@ A beautiful and responsive weather application built with React and Tailwind CSS
 ## 🚀 Live Demo
 
 🔗 Add your deployed link here  
-Example:
+Example:weather-application-ebon-omega.vercel.app
 
 ```bash
-https://skycast-weather.vercel.app
+weather-application-ebon-omega.vercel.app
 ```
 
 ---
